@@ -1,0 +1,11 @@
+/* .bb{
+    background-image: url('../Header//logo.jpg');
+} */
+.img{
+    width: 80px;
+}
+.icon{
+    font-size: 3rem;
+    padding-left: 5px;
+    margin-left: 10px;
+}

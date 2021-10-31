@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Express delivery",
+        "p": "This services ensures that yout urgent documents or packages the recipient at the earliest",
+        "phn": "Serial: +8801841461631",
+        "price": "$20",
+        "id": 1,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbf4OMxPKU3Y48rR_EgUMrU6-Mkrm1AMwJ4qg2GCqk4daat22a0YnPG9ARWuln7m1ZaI4&usqp=CAU"
+    },
+    {
+        "name": "Delivery of Heavy Goods",
+        "p": " This services ensures that yout urgent documents or packages the recipient at the earliest",
+        "phn": "Serial: +8801841461631",
+        "price": "$34",
+        "id": 2,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbf4OMxPKU3Y48rR_EgUMrU6-Mkrm1AMwJ4qg2GCqk4daat22a0YnPG9ARWuln7m1ZaI4&usqp=CAU"
+    },
+    {
+        "name": "Standard Delivery",
+        "p": " This services ensures that yout urgent documents or packages the recipient at the earliest",
+        "phn": "Serial: +8801841461631",
+        "price": "$23",
+        "id": 3,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbf4OMxPKU3Y48rR_EgUMrU6-Mkrm1AMwJ4qg2GCqk4daat22a0YnPG9ARWuln7m1ZaI4&usqp=CAU"
+    },
+    {
+        "name": "Corporate/Bulk Delivery",
+        "p": " This services ensures that yout urgent documents or packages the recipient at the earliest",
+        "phn": "Serial: +8801841461631",
+        "price": "$45",
+        "id": 4,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbf4OMxPKU3Y48rR_EgUMrU6-Mkrm1AMwJ4qg2GCqk4daat22a0YnPG9ARWuln7m1ZaI4&usqp=CAU"
+    },
+    {
+        "name": "Blue Delivery",
+        "p": " This services ensures that yout urgent documents or packages the recipient at the earliest",
+        "phn": "Serial: +8801841461631",
+        "price": "$67",
+        "id": 5,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbf4OMxPKU3Y48rR_EgUMrU6-Mkrm1AMwJ4qg2GCqk4daat22a0YnPG9ARWuln7m1ZaI4&usqp=CAU"
+    },
+    {
+        "name": "White Delivery",
+        "p": " This services ensures that yout urgent documents or packages the recipient at the earliest",
+        "phn": "Serial: +8801841461631",
+        "price": "$6.99",
+        "id": 6,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbf4OMxPKU3Y48rR_EgUMrU6-Mkrm1AMwJ4qg2GCqk4daat22a0YnPG9ARWuln7m1ZaI4&usqp=CAU"
+    }
+]
