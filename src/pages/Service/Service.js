@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Service = (props) => {
-    const { img, p, name, phn, id } = props.service;
+    const { img, price, name, description, _id } = props.service;
     return (
         <div className="div">
             {/* <h1> Our Services</h1> */}
@@ -13,9 +13,11 @@ const Service = (props) => {
                         <img className="image" src={img} alt="" />
                         <div>
                             <h5>{name}</h5>
-                            <p>{p}</p>
+                            <h5>{description}</h5>
+
+                            <p>Price:{price}</p>
                             {/* <p>{phn}</p> */}
-                            <Link to={`/detail/${id}`}><button type="button" className="btn btn-light" value="">Detail</button></Link>
+                            <Link to={`/booking/${_id}`}><button type="button" className="btn btn-light" value="">Book Now</button></Link>
 
                         </div>
                     </div>

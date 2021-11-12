@@ -1,17 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Aboutus from './pages/Aboutus/Aboutus';
-import Banner from './pages/Banner/Banner';
+import ManageServices from './pages/ManageService/ManageService'
+import Booking from './pages/Booking/Booking'
 import Contactus from './pages/Contactus/Contactus';
 import Footer from './pages/Footer/Footer';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Gellery from './pages/Gellary/Gellary';
 import Header from './pages/Header/Header';
 import AuthProvider from './pages/Context/AuthProvider';
-import Services from './pages/Services/Services';
-import Testimonial from './pages/Testimonial/Testimonial';
 import Login from './pages/Login/Login';
 import PrivateRoute from './pages/PrivateRoute/privateRoute';
+import Home from './pages/Home/Home';
+import Addservices from './pages/Addservices/Addservices';
 
 function App() {
   return (
@@ -27,43 +27,35 @@ function App() {
       </BrowserRouter> */}
 
       <AuthProvider>
-
-
         <BrowserRouter>
+          <Header />
           <Switch>
-
-
             <Route exact path="/">
-              <Header></Header>
-              <Banner></Banner>
-              <Services></Services>
-              <Gellery></Gellery>
-              <Testimonial></Testimonial>
-              <Footer></Footer>
+              <Home></Home>
             </Route>
             <Route path="/home">
-              <Header></Header>
-              <Banner></Banner>
-              <Services></Services>
-              <Gellery></Gellery>
-              <Testimonial></Testimonial>
-              <Footer></Footer>
+              <Home></Home>
             </Route>
             <Route path="/login">
-              <Header></Header>
               <Login></Login>
             </Route>
             <PrivateRoute path="/aboutus">
-              <Header></Header>
               <Aboutus></Aboutus>
             </PrivateRoute>
-
+            <PrivateRoute path="/booking/:serviceId">
+              <Booking></Booking>
+            </PrivateRoute>
             <Route path="/contactus">
-              <Header></Header>
               <Contactus></Contactus>
             </Route>
+            <Route path="/addservices">
+              <Addservices></Addservices>
+            </Route>
+            <Route path="/manageservices">
+              <ManageServices></ManageServices>
+            </Route>
           </Switch>
-
+          {/* <Footer /> */}
         </BrowserRouter>
       </AuthProvider>
     </div>

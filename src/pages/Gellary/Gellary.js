@@ -11,13 +11,22 @@ const Gellery = () => {
             <h2> Our Gellary</h2>
             <div className="col-lg-6 gellery d-flex ">
 
-                <div className="col-lg-4 col-md-6 col-sm-12">
+                <div className="col-lg-4 ">
                     <img className="w-50 m-5 round" src={img1} alt="" />
                 </div>
-                <div className="col-lg-4 col-md-6 col-sm-12">
+                <div className="col-lg-4 ">
                     <img className="w-50 m-5 round " src={img2} alt="" />
                 </div>
-                <div className="col-lg-4 col-md-6 col-sm-12">
+                <div className="col-lg-4 ">
+                    <img className="w-50 m-5 round " src={img1} alt="" />
+                </div>
+                <div className="col-lg-4 ">
+                    <img className="w-50 m-5 round " src={img2} alt="" />
+                </div>
+                <div className="col-lg-4 ">
+                    <img className="w-50 m-5 round " src={img1} alt="" />
+                </div>
+                <div className="col-lg-4 ">
                     <img className="w-50 m-5 round " src={img2} alt="" />
                 </div>
 
