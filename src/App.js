@@ -12,6 +12,8 @@ import Login from './pages/Login/Login';
 import PrivateRoute from './pages/PrivateRoute/privateRoute';
 import Home from './pages/Home/Home';
 import Addservices from './pages/Addservices/Addservices';
+import Signin from './pages/Signin/Signin';
+import Signup from './pages/Signup/Signup';
 
 function App() {
   return (
@@ -37,7 +39,11 @@ function App() {
               <Home></Home>
             </Route>
             <Route path="/login">
-              <Login></Login>
+              {/* <Signin></Signin> */}
+              <Signup></Signup>
+            </Route>
+            <Route path="/signin">
+              <Signup></Signup>
             </Route>
             <PrivateRoute path="/aboutus">
               <Aboutus></Aboutus>
@@ -55,7 +61,7 @@ function App() {
               <ManageServices></ManageServices>
             </Route>
           </Switch>
-          {/* <Footer /> */}
+
         </BrowserRouter>
       </AuthProvider>
     </div>
