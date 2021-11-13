@@ -1,6 +1,5 @@
 import React from 'react';
 import img from "../Banner/depositphotos_164830206-stock-photo-courier\ \(1\).jpg"
-
 import './Banner.css'
 
 

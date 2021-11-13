@@ -4,30 +4,17 @@ import Aboutus from './pages/Aboutus/Aboutus';
 import ManageServices from './pages/ManageService/ManageService'
 import Booking from './pages/Booking/Booking'
 import Contactus from './pages/Contactus/Contactus';
-import Footer from './pages/Footer/Footer';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './pages/Header/Header';
 import AuthProvider from './pages/Context/AuthProvider';
-import Login from './pages/Login/Login';
 import PrivateRoute from './pages/PrivateRoute/privateRoute';
 import Home from './pages/Home/Home';
 import Addservices from './pages/Addservices/Addservices';
-import Signin from './pages/Signin/Signin';
 import Signup from './pages/Signup/Signup';
 
 function App() {
   return (
     <div className="App">
-
-      {/* <BrowserRouter>
-        <Aboutus></Aboutus>
-        <Banner></Banner>
-        <Contactus></Contactus>
-        <Footer></Footer>
-        <Gellery></Gellery>
-
-      </BrowserRouter> */}
-
       <AuthProvider>
         <BrowserRouter>
           <Header />
@@ -54,12 +41,12 @@ function App() {
             <Route path="/contactus">
               <Contactus></Contactus>
             </Route>
-            <Route path="/addservices">
+            <PrivateRoute path="/addservices">
               <Addservices></Addservices>
-            </Route>
-            <Route path="/manageservices">
+            </PrivateRoute>
+            <PrivateRoute path="/manageservices">
               <ManageServices></ManageServices>
-            </Route>
+            </PrivateRoute>
           </Switch>
 
         </BrowserRouter>

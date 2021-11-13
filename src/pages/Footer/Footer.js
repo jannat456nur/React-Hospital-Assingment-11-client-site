@@ -12,9 +12,6 @@ const Footer = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            {/* <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" href="#"></Link>
-                            </li> */}
                             <li className="nav-item ps-5">
                                 <Link className="nav-link active" aria-current="page" href="#"><i className="fab fa-instagram"></i></Link>
                             </li>
@@ -27,10 +24,6 @@ const Footer = () => {
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" href="#"><i className="fab fa-twitter-square"></i></Link>
                             </li>
-
-
-
-
                         </ul>
                         <form className="d-flex">
                             <p className="text-white p-3">
