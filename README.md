@@ -3,4 +3,4 @@
 ### Anyone can see the testimonial and can know about thyis site very effectively
 ### If anyone need any support they can booke the services after login and it's also responsive.
 
-### live site   https://fir-practise-c2347.web.app
+### live site   https://fir-practise-c2347.web.app/home
