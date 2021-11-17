@@ -22,13 +22,18 @@ const Header = () => {
 
                             <Link to="/home" className="nav-link ">Home</Link>
                             <Link to="/aboutus" className="nav-link ">About Us </Link>
-                            <Link to="/contactus" className="nav-link ">Contact Us </Link>
-                            <Link to="/addservices" className="nav-link ">AddServices </Link>
-                            <Link to="/manageServices" className="nav-link ">ManageServices </Link>
+
+
                             <span className="text-white">{user?.displayName}</span>
                             {
                                 user?.email ?
-                                    <button onClick={logOut}> LogOut</button> :
+                                    <>
+                                        <Link to="/addservices" className="nav-link ">AddServices </Link>
+                                        <Link to="/ManageOrders" className="nav-link ">ManageOrders </Link>
+                                        <Link to="/contactus" className="nav-link ">Contact Us </Link>
+                                        <button onClick={logOut}> LogOut</button>
+
+                                    </> :
                                     <Link to="/login" className="nav-link ">LogIn </Link>}
                         </ul>
 

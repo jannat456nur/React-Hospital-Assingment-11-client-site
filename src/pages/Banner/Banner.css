@@ -1,10 +1,4 @@
 .banner{
-    background-image: url("../Banner/depositphotos_164830206-stock-photo-courier\ \(1\).jpg");
-
-   padding: 400px;
-   background-repeat: no-repeat;
- height: 100vh;
-}
-.text{
-  margin-right: 100px;
+  width: 600px;
+  height: 400px;
 }

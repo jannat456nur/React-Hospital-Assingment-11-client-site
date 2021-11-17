@@ -11,6 +11,8 @@ import PrivateRoute from './pages/PrivateRoute/privateRoute';
 import Home from './pages/Home/Home';
 import Addservices from './pages/Addservices/Addservices';
 import Signup from './pages/Signup/Signup';
+import Book from '../src/pages/Book/Book'
+import ManageOrders from './pages/ManageOrders/ManageOrders';
 
 function App() {
   return (
@@ -36,7 +38,8 @@ function App() {
               <Aboutus></Aboutus>
             </PrivateRoute>
             <PrivateRoute path="/booking/:serviceId">
-              <Booking></Booking>
+              {/* <Booking></Booking> */}
+              <Book></Book>
             </PrivateRoute>
             <Route path="/contactus">
               <Contactus></Contactus>
@@ -44,8 +47,9 @@ function App() {
             <PrivateRoute path="/addservices">
               <Addservices></Addservices>
             </PrivateRoute>
-            <PrivateRoute path="/manageservices">
-              <ManageServices></ManageServices>
+            <PrivateRoute path="/ManageOrders">
+              {/* <ManageServices></ManageServices> */}
+              <ManageOrders></ManageOrders>
             </PrivateRoute>
           </Switch>
 
