@@ -8,6 +8,7 @@ const Addservice = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
+        //load data
         axios.post('https://frozen-reaches-18758.herokuapp.com/users', data)
             .then(res => {
                 if (res.data.insertedId) {

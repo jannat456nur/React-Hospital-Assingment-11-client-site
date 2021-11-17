@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 // import { initializeAuth } from "../Firebase/firebase.init";
 import initializeAuth from "../pages/Firebase/firebase.init";
 import { getAuth, signInWithPopup, signOut, onAuthStateChanged, GoogleAuthProvider, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
-
+//initialize firebase
 initializeAuth()
 
 const useFirebase = () => {
@@ -25,7 +25,7 @@ const useFirebase = () => {
     const toogleLogIn = e => {
         setlogin(e.target.checked)
     }
-
+    //check pass
     const handleRegistration = e => {
         e.preventDefault();
         console.log(email, pass)
@@ -37,6 +37,7 @@ const useFirebase = () => {
 
 
     }
+    //ckeck user
     const processLogin = (email, pass) => {
         signInWithEmailAndPassword(auth, email, pass)
             .then(result => {
@@ -69,7 +70,7 @@ const useFirebase = () => {
                 console.log(result)
             });
     }
-
+    //sign in with google
     const signInUsingGoogle = () => {
         return signInWithPopup(auth, googleProvider)
             .then(result => {
@@ -77,7 +78,7 @@ const useFirebase = () => {
                 setUser(result.user)
             })
     }
-
+    //logout
     const logOut = () => {
         signOut(auth).then(() => {
             // Sign-out successful.
@@ -88,6 +89,7 @@ const useFirebase = () => {
             });
 
     }
+    //changeAuth State
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
             if (user) {

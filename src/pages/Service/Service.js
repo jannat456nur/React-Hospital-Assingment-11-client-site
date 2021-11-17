@@ -5,7 +5,7 @@ const Service = (props) => {
     const { img, price, name, description, _id } = props.service;
     return (
         <div className="div">
-            {/* <h1> Our Services</h1> */}
+
             <div>
 
                 <div className="card container ">
@@ -16,7 +16,7 @@ const Service = (props) => {
                             <h5>{description}</h5>
 
                             <p>Price:{price}</p>
-                            {/* <p>{phn}</p> */}
+
                             <Link to={`/booking/${_id}`}><button type="button" className="btn btn-light" value="">Book Now</button></Link>
 
                         </div>

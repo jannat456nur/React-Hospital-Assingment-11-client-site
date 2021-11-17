@@ -12,14 +12,16 @@ const Purchase = () => {
     const { id } = useParams()
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders/${id}`)
+        //load data from server
+        fetch(`https://frozen-reaches-18758.herokuapp.com/orders/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
 
     // POST DATA TO SERVER
     const onSubmit = data => {
-        axios.post("http://localhost:5000/orders", data)
+        //post data in server
+        axios.post("https://frozen-reaches-18758.herokuapp.com/orders", data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added successfully')
@@ -31,7 +33,7 @@ const Purchase = () => {
 
     return (
         <div>
-            {/* <Header></Header> */}
+
             <div className='addorders'>
                 <h2>PURCHASE PRODUCT</h2>
 
@@ -45,7 +47,7 @@ const Purchase = () => {
                     <input type="submit" value='Confirm Order' style={{ height: '35px', background: 'navy', cursor: 'pointer', color: '#fff' }} />
                 </form>
             </div>
-            {/* <Footer></Footer> */}
+
         </div>
     );
 };
